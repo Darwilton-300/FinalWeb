@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="stylesrp.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+</head>
+
+<body>
+  <main>
+    <header class="header">
+      <nav class="header__nav">
+        <a href="#" class="header__logo"><img src="Assets/logo.jpeg" alt="">Calificación de Rimas</a>
+        <ul class="header__menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="https://www.instagram.com/ligaudem/">Contacto</a></li>
+          <li><a href="indexCalif.html">Califica tus batallas</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="notes">
+
+    </section>
+    <section class="new-card">
+      <h2>Crear Nueva Tarjeta</h2>
+      <form id="new-card-form">
+        <fieldset>
+          <label for="new-card-name">Nombre</label>
+          <input type="text" id="new-card-name" required>
+        </fieldset>
+        <fieldset>
+          <label for="new-card-image">Imagen</label>
+          <input type="file" id="new-card-image" accept="image/*" required>
+        </fieldset>
+        <button type="submit">Crear Tarjeta</button>
+      </form>
+    </section>
+    <section class="custom-modal">
+      <div id="modal-js-example" class="modal">
+        <div class="modal-background"></div>
+      
+        <div class="modal-card">
+          <h2>New note</h2>
+
+        <form class="new-note-form">
+          <fieldset>
+              <label for="">Date</label>
+              <input type="date" id="date-input">
+            </fieldset>
+            <fieldset>
+              <label for="">Title</label>
+              <input type="text" id="title-input">
+            </fieldset>
+            <fieldset>
+              <label for="">Description</label>
+              <textarea name="" rows="3" id="description-input"></textarea>
+            </fieldset>
+            <fieldset>
+              <label for="image-input">Image</label>
+              <input type="file" id="image-input" accept="image/*">
+            </fieldset>
+            <input id="new-note-button" type="submit" value="Create note">
+            <input id="edit-note-button" type="submit" data-selected-note value="Save note">
+        </form>
+          </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div>
+    </section>
+  </main>
+  <script src="modal.js"></script>
+  <script src="index2.js"></script>
+</body>
+
+</html>
